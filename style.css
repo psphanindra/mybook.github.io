@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #E7ECF0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+}
+header{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+	box-sizing: border-box;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+	font-size: 14px;
+	line-height: 50px;
+	
+}
+header .topbar{
+	width: 865px;
+	margin: 0 auto ;
+	/* background: lightgrey; */
+	height: 50px;
+}
+header .topbar>.logo{
+	float: left;
+}
+.topbar .signup{
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+
+	
+
+}
+.topbar .signup a{
+	text-decoration: none;
+	color: #fff;
+	background: #E7ECF0;
+	padding: 5px 10px;
+	border-radius: 5px;
+	
+}
+.container{
+	margin: auto;
+	margin-top: 70px;
+	position: relative;
+	padding: 56px 14px 15px;
+	width: auto;
+	max-width: 865px;
+	height: 350px;
+	background: #fff;
+	border-radius: 5px;
+	/* border: 1px solid black; */
+}
+.container .wrap{
+	width: 80%;
+	/* background-color: grey; */
+	margin: auto;
+	height: 100%;
+}
+.container .wrap h1, .container .wrap input{
+	padding: 0;
+	padding: 0;
+	font-weight: 400;
+	margin-bottom: 10px;
+	
+}
+
+.container .wrap input{
+	/* margin-bottom: 20px;
+	margin-top: 5px;
+	height: 30px;
+	line-height: 30;*/
+}
+.container .wrap input[type="checkbox"]{
+	margin: 0;
+
+}
+
+.container .wrap input[type="text"],
+.container .wrap input[type="password"] {
+	border: none;
+	border-bottom: 2px solid black;
+	background-color: transparent;
+	font-size: 20px;
+	/* color: white; */
+	box-sizing: border-box;
+	height: 40px;
+	width: 300px;
+}
+.container .wrap input[type="text"]:focus,
+.container .wrap input[type="password"]:focus {
+	outline: none;
+	
+	border-bottom: 2px solid #55acee;
+	
+}
+.container .wrap input[type="text"]:hover,
+.container .wrap input[type="password"]:hover {
+	
+	outline: transparent;
+	border-bottom: 2px solid #55acee;
+	
+}
+.container .wrap input::placeholder{
+/* 	color: white;
+	 */	font-weight: normal;
+}
+
+.container .wrap input[type="submit"]{
+	height: 40px;
+	width: 70px;
+	background: grey;
+	outline: transparent;
+	border: transparent;
+	margin-top: 10px;
+}
+.container .wrap  input[type="submit"]:hover{
+	
+	background: #55acee;
+	outline: transparent;
+	border: transparent;
+	margin-top: 10px;
+}

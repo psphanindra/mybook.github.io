@@ -1,0 +1,44 @@
+{
+
+"user": 
+
+		{
+			"username": "admin",
+			"password": "admin"
+		}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+{
+	"user": [
+
+		{
+			"username": "admin",
+			"password": "admin"
+		},
+		{
+			"username": "phani",
+			"password": "phani"
+		},
+		{
+			"username": "phani1",
+			"password": "phani1"
+		},
+		{
+			"username": "phani2",
+			"password": "phani2"
+		}
+	]
+}*/
