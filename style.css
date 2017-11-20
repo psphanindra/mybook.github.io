@@ -116,15 +116,16 @@ header .topbar>.logo{
 	 */	font-weight: normal;
 }
 
-.container .wrap input[type="submit"]{
+.container .wrap input[type="button"]{
 	height: 40px;
 	width: 70px;
 	background: grey;
 	outline: transparent;
 	border: transparent;
 	margin-top: 10px;
+	cursor: pointer;
 }
-.container .wrap  input[type="submit"]:hover{
+.container .wrap  input[type="button"]:hover{
 	
 	background: #55acee;
 	outline: transparent;
