@@ -3,12 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MyBook | wall</title>
+	<title>Document</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.css">
 	<link rel="stylesheet" href="wall.css">	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.2/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.js"></script>
+
 	<script src="wall.js"></script>	
 
 </head>
@@ -16,7 +18,7 @@
 	<div class="navbar navbar-inverse " id="custom-nav">
 		<div class="container">
 			<div class="brand"><h3>MyBook</h3></div>
-			<div class="dropdown"><a href="index.html">Logout</a></div>
+			<div class=""><a href="index.html">Logout</a></div>
 		</div>
 	</div>
 	<div class="wrapper">
@@ -24,12 +26,27 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="dashboard dashboard-left">
+						<div class="col-lg-12 " align="center">
+				            <!-- <div class="line"><h3>12 : 30 AM</h3></div> -->
+				            <div class="outter"><img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="image-circle"/></div>   
+				            <h1>Hi Phani</h1>
+				            <span>@phanindra</span>
+					    </div>
+					    
+        				<div> 
+		                
+               
+        </div>
 
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="content col-lg-12">
+
 						<div class="post-creat">
+							<div class="blank col-lg-12">
+								<!-- <h6 id="blank" align="center">wall</h6> -->
+							</div>
 							<div class="col-lg-12 well">
 							    <form accept-charset="UTF-8" action="" method="">
 							        <textarea class="form-control" id="text" name="text" placeholder="What's in your mind..." rows="5" datalen="240"></textarea>
@@ -43,19 +60,94 @@
 						<div class="feed container">
 							<div class="feed-container">
 								<div class="feed-profile row">
-									<div class="col-lg-1"><img src="phani.png" alt="..." class="img-circle"></div>
-									<div class="col-lg-11">
-										<div class="col-lg-12"><h6 id="profile-name">phanindra</h6></div>
-										<div class="col-lg-12"><h6><small id="post-time">9 minutes ago</small></h6></div>
-									</div>
+									<div class="col-lg-1 col-md-1"><img src="phani.png" alt="..." class="img-circle"></div>
+									<div class="col-lg-11 ">
+										<div class="col-lg-12">
+											<h6 id="profile-name">phanindra</h6>
+										</div>
+										<div class="col-lg-12">
+											<h6>
+												<small id="post-time">9 minutes ago</small>
+												</h6>
+											</div>
+										</div>
 								</div>
 								 <div class="feed-post">
 								 	<div class="col-lg-12 wrapper">
 								 		<p id="post-content">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 								 	</div>
 								 </div>
-								 <div class="feed-comment"></div> 
-								
+								 <div class="container">
+									 <div class="feed-comment row">
+									 	<div class="like col-lg-4  ">
+									 		<button id="likebtn" class="btn pull-left custombtn" type="button">
+									 			<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+									 		</button>
+									 		<div class="text " >
+									 			<h6 class=""><span id="like-counter">20</span> Likes
+									 			</h6>
+									 		</div>				 		
+									 	</div>
+									 	<div class="comment col-lg-4">
+									 		<button id="cmtbtn" class="btn pull-left custombtn" type="button">
+									 			<i class="fa fa-commenting-o "  aria-hidden="true"></i>
+									 		</button>
+									 		<div class="text " >
+									 			<h6 class="">Comments</h6>
+									 		</div>
+
+									 	</div>
+									 	<div class="share col-lg-4">
+									 		<button id="cmtbtn" class="btn pull-left custombtn" type="button">
+									 			<i class="fa fa-share" aria-hidden="true"></i>
+									 		</button>
+									 		<div class="text " >
+									 			<h6 class="">Share</h6>
+									 		</div>
+
+									 	</div>
+								 	
+									 </div> 
+									 <hr>
+									 <div class="creat-comment " id="create-comment">
+									 	<div class="pro-det row">
+									 		<div class="prop-pic col-lg-1">
+									 			<img src="phani.png" id="pro-pic" alt="">
+									 		</div>
+									 		<div class="pro-name col-lg-11">
+									 			<h6>phanindra</h6>
+									 		</div>
+									 	</div>
+
+									 	<div class="write-comment">
+									 		<div class="col-lg-12 well">
+							    				<form accept-charset="UTF-8" action="" method="">
+							       					 <textarea class="form-control" id="comment-text" name="text" placeholder="Comments..." rows="1" ></textarea>
+							        				<button class="btn btn-info btn-sm pull-right " id="comment-btn" type="submit">Comment</button>
+							        
+							    				</form>
+											</div>
+									 	</div>
+									 	<div class="comment-btn">
+									 		
+									 	</div>
+									 	
+									 </div>
+									 <div class="show-comment">
+									 	<div class="pro-det row">
+									 		<div class="prop-pic col-lg-1">
+									 			<img src="phani.png" id="pro-pic" alt="">
+									 		</div>
+									 		<div class="pro-name col-lg-11">
+									 			<h6>phanindra <small id="comment-time">| 7 minutes ago</small></h6>
+									 		</div>
+									 	</div>
+									 	<div class="col-lg-12 well">
+							    				<p id="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, doloribus.</p>
+											</div>
+									 	</div>
+									 </div>
+								</div>
 							</div>
 						</div>
 					</div>
