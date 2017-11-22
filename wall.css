@@ -19,12 +19,23 @@ body{
 	width: 100%;
 	height: 50vh;
 }
+.line>h3{
+	color : #000;
+     font-size:14px;
+}
 .content{
 	background: #fff;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	min-height: 25vh;
 
+}
+.image-circle{
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    border: 4px solid #FFF;
+    margin: 10px;
 }
 
 .well{
@@ -34,6 +45,7 @@ body{
 textarea {
     resize: none;
     margin-bottom: 10px;
+    overflow: hidden;
 
 }
 .feed{
@@ -45,10 +57,52 @@ textarea {
 	border-radius: 50%;
 
 }
+.blank{
+	color:#fff;
+	width: 100%;
+	height: 20px;
+}
 .feed-post{
 	width: 100%;
 	height: auto;
 	
 	overflow-wrap: break-word;
 	word-wrap: break-word;
+}
+.feed-comment{
+	height: 40px;
+}
+
+.custombtn{
+	background: transparent;
+	padding: 0;
+	margin-right: 10px;
+}
+
+i:hover{
+	color: #138496;
+}
+.pro-det{
+	height: 40px;
+	width: 100%;
+}
+.pro-pic{
+	height: 40px;
+	width: 40px;
+
+}
+#pro-pic{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+
+}
+#comment-text{
+	overflow: hidden;
+}
+.write-comment{
+	margin-bottom: 20px;
+}
+button{
+	cursor: pointer;
 }
