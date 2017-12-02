@@ -42,7 +42,7 @@ $("#submit-btn").click(function(e) {
        var posttime = new Date;
        //var posttime = moment().format('llll');
        var postcontent = $("#text").val();
-       $("#text").val(" ");
+       $("#text").val("");
        /*alert(posttime);
        alert(postcontent);*/
        e.preventDefault();
