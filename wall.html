@@ -10,6 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.2/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.js"></script>
+	<script src="moment.js"></script>	
 
 	<script src="wall.js"></script>	
 
@@ -58,7 +59,7 @@
 						</div>
 						<hr>
 						<div class="feed container">
-							<div class="feed-container">
+							<div class="feed-container" id="feed-container">
 								<div class="feed-profile row">
 									<div class="col-lg-1 col-md-1"><img src="phani.png" alt="..." class="img-circle"></div>
 									<div class="col-lg-11 ">
@@ -67,14 +68,14 @@
 										</div>
 										<div class="col-lg-12">
 											<h6>
-												<small id="post-time">9 minutes ago</small>
+												<small id="post-time"></small>
 												</h6>
 											</div>
 										</div>
 								</div>
 								 <div class="feed-post">
 								 	<div class="col-lg-12 wrapper">
-								 		<p id="post-content">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+								 		<p id="post-content"></p>
 								 	</div>
 								 </div>
 								 <div class="container">
@@ -84,7 +85,7 @@
 									 			<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
 									 		</button>
 									 		<div class="text " >
-									 			<h6 class=""><span id="like-counter">20</span> Likes
+									 			<h6 class=""><span id="like-counter"></span> Likes
 									 			</h6>
 									 		</div>				 		
 									 	</div>
@@ -128,22 +129,20 @@
 							    				</form>
 											</div>
 									 	</div>
-									 	<div class="comment-btn">
-									 		
-									 	</div>
+									 	
 									 	
 									 </div>
-									 <div class="show-comment">
+									 <div class="show-comment" id="post-comment">
 									 	<div class="pro-det row">
 									 		<div class="prop-pic col-lg-1">
 									 			<img src="phani.png" id="pro-pic" alt="">
 									 		</div>
 									 		<div class="pro-name col-lg-11">
-									 			<h6>phanindra <small id="comment-time">| 7 minutes ago</small></h6>
+									 			<h6>phanindra | <small id="comment-time"></small></h6>
 									 		</div>
 									 	</div>
 									 	<div class="col-lg-12 well">
-							    				<p id="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, doloribus.</p>
+							    				<p id="comment"></p>
 											</div>
 									 	</div>
 									 </div>
@@ -161,4 +160,3 @@
 
 </body>
 </html>
-
