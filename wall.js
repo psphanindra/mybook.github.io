@@ -1,5 +1,4 @@
 
-
 "use strict";
 $(document).ready(function() {
 	var text_max = 240;
@@ -19,9 +18,6 @@ $(document).ready(function() {
   		$('#count_message').css('color', 'black');
   	}
   });
-
-  
-
           var likecounter =$('#like-counter').html();
              /*alert(likecounter);*/
 
@@ -41,6 +37,57 @@ $(document).ready(function() {
  
   });
 
+$("#feed-container").hide();
+$("#submit-btn").click(function(e) {
+       var posttime = new Date;
+       //var posttime = moment().format('llll');
+       var postcontent = $("#text").val();
+       $("#text").val(" ");
+       /*alert(posttime);
+       alert(postcontent);*/
+       e.preventDefault();
+       var post = {};
+       post.time=posttime;
+       post.content=postcontent;
+       post.like=0;
+       //console.log(post);
+        /*var p= $("#feed-container");
+        console.log(p);*/
+
+        localStorage.setItem('post', JSON.stringify(post));
+        var post= JSON.parse(localStorage.getItem('post'));
+        //console.log(post);
+
+        $("#post-time").html(moment(post.time).fromNow());
+        $("#post-content").html(post.content);
+        $("#like-counter").html(post.like);
+
+        $("#feed-container").show();
+
+});
+
+
+  
+$("#post-comment").hide();
+$("#comment-btn").click(function(e) {
+        e.preventDefault();
+        $("#post-comment").show();
+        var commenttime= new Date();
+
+        var commentcontent= $("#comment-text").val();
+
+
+        $("#comment-text").val("");
+        $("#comment-time").html(moment(commenttime).fromNow());
+       $("#comment").html(commentcontent);
+        
+});
+
 
 });
 	
+	
+
+	
+
+
