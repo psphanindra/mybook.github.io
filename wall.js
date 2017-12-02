@@ -33,8 +33,6 @@ $(document).ready(function() {
     //alert("yupp..");
     $('#create-comment').toggle(1000);
 
-    
- 
   });
 
 $("#feed-container").hide();
@@ -63,11 +61,10 @@ $("#submit-btn").click(function(e) {
         $("#like-counter").html(post.like);
 
         $("#feed-container").show();
+        $('#count_message').html(text_max + ' remaining');
 
 });
 
-
-  
 $("#post-comment").hide();
 $("#comment-btn").click(function(e) {
         e.preventDefault();
@@ -80,14 +77,11 @@ $("#comment-btn").click(function(e) {
         $("#comment-text").val("");
         $("#comment-time").html(moment(commenttime).fromNow());
        $("#comment").html(commentcontent);
-        
+            
 });
-
-
 });
 	
 	
 
 	
-
 
